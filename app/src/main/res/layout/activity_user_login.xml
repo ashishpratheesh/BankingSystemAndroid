@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".UserLogin">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="LOGIN"
+                            android:textSize="30dp"
+                            android:textColor="#000000"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:id="@+id/login"
+                            android:layout_marginTop="80dp"
+                            />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:id="@+id/textInputLayoutUsername"
+                            android:layout_below="@id/login"
+                            android:layout_height="wrap_content">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:hint="Username"
+                                    android:id="@+id/username"
+                                    android:textColor="#000000"
+                                    style="@style/GreenText"
+                                    android:gravity="center"
+                                    android:layout_marginTop="20dp"
+                                    />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:id="@+id/textInputLayoutPassword"
+                            android:layout_below="@+id/textInputLayoutUsername"
+                            android:layout_height="wrap_content">
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:hint="Password"
+                                    android:id="@+id/password"
+                                    android:inputType="textPassword"
+                                    android:textColor="#000000"
+                                    style="@style/GreenText"
+                                    android:gravity="center"
+                                    android:layout_marginTop="20dp"
+                                    />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <Button
+                            android:id="@+id/btnLogin"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/textInputLayoutPassword"
+                            android:layout_marginTop="20dp"
+                            android:background="#cf5151"
+                            android:clickable="false"
+                            android:gravity="center"
+                            android:text="SUBMIT Credentials"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/btnLogin"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:id="@+id/fingerprintMessage"
+                            />
+
+                </RelativeLayout>
+
+        </ScrollView>
+</RelativeLayout>

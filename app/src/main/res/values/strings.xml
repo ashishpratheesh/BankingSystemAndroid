@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BankingSystemAndroid</string>
+    <string name="transfer_between_accounts">Transfer between accounts</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string-array name="titles">
+        <item>Home</item>
+        <item>Transfer</item>
+        <item>Bank Statement</item>
+        <item>Add User</item>
+        <item>Profile</item>
+
+    </string-array>
+</resources>
